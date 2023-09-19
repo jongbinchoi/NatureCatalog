@@ -2,17 +2,17 @@
 <img src="https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90" />
 
 
-### 2semester_NatureCatalog
+###2semester_NatureCatalog
 참조(https://codingmomong.tistory.com/621)
 
 
-### npm vue-cli 설치
+##npm vue-cli 설치
 ```
 npm install -g @vue/cli
 ```
 
 
-### npm vue-cli project 생성(단 대문자 사용 불가)
+##npm vue-cli project 생성(단 대문자 사용 불가)
 ```
 vue create naturecatalog
 ```
