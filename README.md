@@ -12,8 +12,7 @@ npm install -g @vue/cli
 ```
 
 ```
-#npm vue-cli project 생성
-#단 대문자 사용 불가
+###npm vue-cli project 생성(단 대문자 사용 불가)
 vue create naturecatalog
 ```
 
