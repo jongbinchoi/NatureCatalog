@@ -1,15 +1,13 @@
 
 ![header](https://capsule-render.vercel.app/api
   ?type=waving
-  &color=auto
-  &height=960
+  &color=auto&height=960
   &section=header
-  &text=Nature%Catalog!
+  &text=NatureCatalog!
   %20render
   &fontSize=90
   &animation=fadeIn
-  &fontAlignY=38
-  &desc=Decorate
+  &fontAlignY=38&desc=Decorate
   %20GitHub
   %20Profile
   %20or
@@ -19,6 +17,7 @@
   %20me!
   &descAlignY=51
   &descAlign=62)
+
 
 
 ### 2semester_NatureCatalog
