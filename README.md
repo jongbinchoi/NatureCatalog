@@ -56,7 +56,7 @@ Babel, vuex, Router, Linter / Formatter <-선택
 ## vue 버전 선택
 ```
 npm Vue 3.x <-선택
-npm Vue 2.x 
+npm Vue 2.x
 ```
 
 
@@ -86,6 +86,13 @@ ESLint + Prettier
 ## package 관리파일 설정
 ```
 In dedicated config files: 별도의 파일로 관리
-In dedicated config files 
+In dedicated config files
 In package.json: package.json 파일에 관리 <-선택
+```
+
+
+## Trailing spaces not allowed 오류
+```
+VSCode에서 File > Preferences > Settings >  Trim Trailing Whitespace을 검색
+체크하기
 ```

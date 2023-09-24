@@ -1,15 +1,14 @@
 <template>
   <div>
     <nav id = 'MenuBar'>
-    <img alt="logo1" src="./assets/image.png" marign="0" pading="0" width="180"><br>
-    <div id="MenuBar-text">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      login
-    </div>
-  </nav>
-  <div style="padding-top: 120px;"></div>
-  <router-view/>
+      <img alt="logo1" src="./assets/image.png" marign="0" pading="0" width="180"><br>
+        <div id="MenuBar-text">
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">About</router-link> |
+          <router-link to="/about">Exhibition</router-link> |
+        </div>
+    </nav>
+  <router-view style="padding-top: 120px;"/>
   </div>
 </template>
 
