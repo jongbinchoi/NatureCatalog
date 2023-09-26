@@ -8,7 +8,8 @@
           <router-link to="/about">Exhibition</router-link> |
         </div>
     </nav>
-  <router-view style="padding-top: 120px;"/>
+    <router-view style="padding-top: 120px;"/>
+    <router-view style="padding-top: 120px;"/>
   </div>
 </template>
 
