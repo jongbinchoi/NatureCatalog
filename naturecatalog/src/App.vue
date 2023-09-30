@@ -5,11 +5,12 @@
         <div id="MenuBar-text">
           <router-link to="/">Home</router-link> |
           <router-link to="/about">About</router-link> |
-          <router-link to="/about">Exhibition</router-link> |
+          <router-link to="/exhibitions">Exhibition</router-link> |
+          <router-link to="/exhibitions">Exhibition</router-link> |
         </div>
     </nav>
     <router-view style="padding-top: 120px;"/>
-    <router-view style="padding-top: 120px;"/>
+
   </div>
 </template>
 
@@ -47,12 +48,12 @@ body {
 
   height: 40px;
   width: 100%;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: sans-serif;
   color: #000000;
   text-align: center;
   text-decoration: none;
-  margin: 0px auto;
+  line-height: 40px;
 }
 
 nav a.router-link-exact-active {
