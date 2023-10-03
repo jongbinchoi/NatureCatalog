@@ -21,14 +21,15 @@
 
 <script>
 export default {
-  data() {
+  name: 'LoginFrom',
+  data () {
     return {
       user_id: '',
       user_pw: ''
     }
   },
   methods: {
-    fnLogin() {
+    fnLogin () {
       if (this.user_id === '') {
         alert('ID를 입력하세요.')
         return
