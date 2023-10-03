@@ -1,15 +1,19 @@
 <template>
   <div>
     <nav id = 'MenuBar'>
-      <img alt="logo1" src="./assets/image.png" marign="0" pading="0" width="180"><br>
-        <div id="MenuBar-text">
+      <img alt="logo1" src="./assets/image.png" marign="0" pading="0" width="180" >
+
+      <div id="MenuBar-text">
           <router-link to="/">Home</router-link> |
           <router-link to="/about">About</router-link> |
           <router-link to="/exhibitions">Exhibition</router-link> |
           <router-link to="/exhibitions">Exhibition</router-link> |
-        </div>
+      </div>
+      <div id="MenuBar-login">
+        <router-link to="/login">Home</router-link>
+      </div>
     </nav>
-    <router-view style="padding-top: 120px;"/>
+    <router-view style="padding-top: 80px;"/>
 
   </div>
 </template>
@@ -30,7 +34,9 @@ body {
 
 #MenuBar {
   /*메뉴바 상단으로 고정*/
-  position: fixed;
+  position: absolute;
+  display: flex;
+
   top: 0px;
   left: 0px;
   right: 0px;
@@ -40,20 +46,32 @@ body {
   height: 80px;
   width: 100%;
 
-  background-color: #ffffff;
+  background-color: #046325;
+  /*컨텐츠 중앙정렬*/
+  align-content: center;
 }
 #MenuBar-text {
-  background-color: #046325;
-  position: absolute;
-
-  height: 40px;
-  width: 100%;
+  height: 100%;
+  width: 60%;
   font-size: 24px;
   font-weight: sans-serif;
+
   color: #000000;
+  /*컨텐츠 중앙정렬*/
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+#MenuBar-login{
+  height: 100%;
+  width: 60%;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: auto;
   text-align: center;
   text-decoration: none;
-  line-height: 40px;
+  display: inline-block;
 }
 
 nav a.router-link-exact-active {
