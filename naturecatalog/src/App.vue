@@ -1,8 +1,9 @@
 <template>
-   <div>
+  <body>
     <MainBar/>
-    <router-view style="padding-top: 80px;"/>
-  </div>
+    <router-view/>
+  </body>
+
 </template>
 
 <script>
@@ -15,3 +16,22 @@ export default {
   }
 }
 </script>
+
+<style >
+router-link-active {
+  color: #42b983;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2;
+}
+
+</style>
