@@ -1,7 +1,5 @@
 <template>
     <nav id = 'MenuBar'>
-      <img alt="logo1" src="../assets/image.png" marign="0" pading="0" width="180" >
-
       <div id="MenuBar-text">
           <router-link to="/">Home</router-link> |
           <router-link to="/about">About</router-link> |
@@ -21,19 +19,6 @@ export default {
 </script>
 
 <style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-body {
-  margin: 0px auto;
-  padding: 0px;
-}
-
 #MenuBar {
   /*메뉴바 상단으로 고정*/
   position: absolute;
