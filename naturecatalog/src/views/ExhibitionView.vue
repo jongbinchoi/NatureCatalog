@@ -4,7 +4,7 @@
 <div class="row">
 
   <div class="col-lg-12">
-    <h1 class="page-header">Portfolio Item <small>Explain Your Work</small></h1>
+    <h1 class="page-header">Exhibition <small>for Nature</small></h1>
   </div>
 
 </div>
@@ -53,19 +53,10 @@
 
 </div>
 
-</div><!-- /.container -->
+</div>
 </template>
 
   <style scoped>
-  /*!
- * Bootstrap v3.0.2 by @fat and @mdo
- * Copyright 2013 Twitter, Inc.
- * Licensed under http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world by @mdo and @fat.
- */
-
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 
 article,
 aside,

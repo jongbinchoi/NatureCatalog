@@ -25,16 +25,22 @@ export default {
 #MenuBar {
   /*메뉴바 상단으로 고정*/
   display: flex;
-  justify-content: space-around; /* 아이템들 사이에 공간을 동일하게 분배 */
+  justify-content: space-between; /* 아이템들 사이에 여백을 동일하게 분배 */
   padding: 0 auto;
   background-color: #046325;
-  height: 80px;
+  height: 10%;
   width: 100%;
+
+  align-items: center; /* 세로 중앙 정렬 */
+  text-align: center;
 }
 #MenuBar img {
+  display: flex;
+  float:left;
   height: 100%;
-  width: 20%;
+  width: 10%;
   padding: 0 auto;
+  justify-self: start;
 }
 #MenuBar-text {
   display: flex;
@@ -49,9 +55,9 @@ export default {
   justify-content: center; /* 가로 중앙 정렬 */
   text-align: center;
 }
-#MenuBar-login{
-  display: flex;
-  height: 90%;
+#MenuBar-login:hover{
+  display: block;
+  height: 100%;
   width: 10%;
   background-color: #007BFF;
   color: white;
@@ -61,7 +67,18 @@ export default {
   text-decoration: none;
   font-size: 16px;
 }
-
+#MenuBar-login {
+  display: block;
+  height: 100%;
+  width: 10%;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
 nav a.router-link-exact-active {
   color: #42b983;
   line-height: 40px;
