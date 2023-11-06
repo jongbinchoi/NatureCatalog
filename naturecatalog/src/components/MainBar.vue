@@ -9,7 +9,7 @@
           <router-link to="/forum">forum</router-link> |
       </div>
       <div id="MenuBar-login">
-        <router-link to="/login">Home</router-link>
+        <router-link to="/login">login</router-link>
       </div>
     </nav>
   </body>
@@ -27,7 +27,7 @@ export default {
   display: flex;
   justify-content: space-between; /* 아이템들 사이에 여백을 동일하게 분배 */
   padding: 0 auto;
-  background-color: #046325;
+  background-color: #0a3711;
   height: 10%;
   width: 100%;
 
@@ -59,6 +59,8 @@ export default {
   display: block;
   height: 100%;
   width: 10%;
+  font-size: 24px;
+  font-weight: sans-serif;
   background-color: #007BFF;
   color: white;
   border: none;
@@ -71,7 +73,9 @@ export default {
   display: block;
   height: 100%;
   width: 10%;
-  background-color: #000000;
+  font-size: 24px;
+  font-weight: sans-serif;
+  margin-right: 1%;
   color: white;
   border: none;
   padding: 0 auto;
@@ -80,7 +84,7 @@ export default {
   font-size: 16px;
 }
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ffffff;
   line-height: 40px;
 }
 </style>
