@@ -31,6 +31,4 @@ body {
   background-color: #ffffff;
 }
 
-
-
 </style>
