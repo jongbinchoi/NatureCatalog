@@ -1,14 +1,28 @@
 <template>
   <body>
-    <nav id = 'MenuBar'>
+    <nav class = 'MenuBar'>
       <img src="../assets/Naturecatalog.png" alt="logo">
-      <div id="MenuBar-text">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link> |
-          <router-link to="/exhibitions">Exhibition</router-link> |
-          <router-link to="/forum">forum</router-link> |
+      <div class="MenuBar-text-container">
+        <div class="MenuBar-text">
+          <router-link to="/"><p>Home</p></router-link>
+        </div> |
+        <div class="MenuBar-text">
+          <router-link to="/about"><p>About</p></router-link>
+        </div>|
+        <div class="MenuBar-text">
+          <router-link to="/exhibitions"><p>Exhibition</p></router-link>
+        </div>|
+        <div class="MenuBar-text">
+          <router-link to="/forum"><p>forum</p></router-link>
+        </div>|
+        <div class="MenuBar-text">
+          <router-link to="/Wujin"><p>Wujin</p></router-link>
+        </div>|
+        <div class="MenuBar-text">
+          <router-link to="/Dohyon"><p>Dohyon</p></router-link>
+        </div>
       </div>
-      <div id="MenuBar-login">
+      <div class="MenuBar-login">
         <router-link to="/login">login</router-link>
       </div>
     </nav>
@@ -22,7 +36,21 @@ export default {
 </script>
 
 <style scoped>
-#MenuBar {
+
+a {
+  display: block;
+  width: auto;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #00ff15;
+}
+nav a.router-link-exact-active[aria-current] {
+  color: #00ff15;
+}
+
+.MenuBar {
   /*메뉴바 상단으로 고정*/
   display: flex;
   justify-content: space-between; /* 아이템들 사이에 여백을 동일하게 분배 */
@@ -34,7 +62,7 @@ export default {
   align-items: center; /* 세로 중앙 정렬 */
   text-align: center;
 }
-#MenuBar img {
+.MenuBar img {
   display: flex;
   float:left;
   height: 100%;
@@ -42,40 +70,35 @@ export default {
   padding: 0 auto;
   justify-self: start;
 }
-#MenuBar-text {
+.MenuBar-text-container {
   display: flex;
   height: 100%;
   width: 30%;
   font-size: 24px;
   font-weight: sans-serif;
-
-  color: #000000;
+  color: #ffffff;
   /*컨텐츠 중앙정렬*/
   align-items: center; /* 세로 중앙 정렬 */
   justify-content: center; /* 가로 중앙 정렬 */
   text-align: center;
 }
-#MenuBar-login:hover{
-  display: block;
-  height: 100%;
-  width: 10%;
-  font-size: 24px;
-  font-weight: sans-serif;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 0 auto;
-  text-align: center;
+.MenuBar-text{
+  margin: 0 15px;
+  color: #fff000;
   text-decoration: none;
-  font-size: 16px;
 }
-#MenuBar-login {
+.MenuBar-text:hover{
+  color: #007BFF;
+}
+.MenuBar-login:hover{
+  background-color: #007BFF;
+}
+.MenuBar-login {
   display: block;
   height: 100%;
   width: 10%;
   font-size: 24px;
   font-weight: sans-serif;
-  margin-right: 1%;
   color: white;
   border: none;
   padding: 0 auto;
@@ -85,6 +108,5 @@ export default {
 }
 nav a.router-link-exact-active {
   color: #ffffff;
-  line-height: 40px;
 }
 </style>

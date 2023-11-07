@@ -1,62 +1,73 @@
 <template>
-        <div class="container">
+  <div class="container">
+  <div class="row">
 
-<div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Exhibition <small>for Nature Catalogue</small></h1>
+    </div>
 
-  <div class="col-lg-12">
-    <h1 class="page-header">Exhibition <small>for Nature</small></h1>
   </div>
 
-</div>
+  <div class="row">
 
-<div class="row">
+    <div class="col-md-8">
+      <img class="img-responsive" src="http://placehold.it/750x500">
+    </div>
 
-  <div class="col-md-8">
-    <img class="img-responsive" src="http://placehold.it/750x500">
+    <div class="col-md-4">
+      <h3>Project Description</h3>
+      <p>This Exhibition is good </p>
+      <h3>Creater Names</h3>
+      <ul>
+        <p class="name-1">Kim jeaho</p>
+        <p class= "name-2"> Front-end: Exhibition1 & Mainbar</p>
+        <p class="name-1">Kim Dohyon</p>
+        <p class= "name-2"> Front-end: Exhibition2</p>
+        <p class="name-1">Na Wujin</p>
+        <p class= "name-2"> Front-end: Exhibition3</p>
+      </ul>
+    </div>
+
   </div>
 
-  <div class="col-md-4">
-    <h3>Project Description</h3>
-    <p>This exgibition is good </p>
-    <h3>Project Details</h3>
-    <ul>
-      <li>Lorem Ipsum</li>
-      <li>Dolor Sit Amet</li>
-      <li>Consectetur</li>
-      <li>Adipiscing Elit</li>
-    </ul>
+  <div class="row">
+
+    <div class="col-lg-12">
+      <h3 class="page-header">Related Projects</h3>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
+    </div>
+
+    <div class="col-sm-3 col-xs-6">
+      <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
+    </div>
+
   </div>
 
-</div>
-
-<div class="row">
-
-  <div class="col-lg-12">
-    <h3 class="page-header">Related Projects</h3>
   </div>
-
-  <div class="col-sm-3 col-xs-6">
-    <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
-  </div>
-
-  <div class="col-sm-3 col-xs-6">
-    <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
-  </div>
-
-  <div class="col-sm-3 col-xs-6">
-    <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
-  </div>
-
-  <div class="col-sm-3 col-xs-6">
-    <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
-  </div>
-
-</div>
-
-</div>
-</template>
+  </template>
 
 <style scoped>
+  .name-1 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .name-2 {
+    font-size: 16px;
+    text-align: left;
+    text-indent: 20px;
+  }
+/*개인작성 코드*/
   article,
   aside,
   details,
@@ -315,14 +326,14 @@
       page-break-after: avoid;
     }
     select {
-      background: #fff !important;
+      background: #000 !important;
     }
     .navbar {
       display: none;
     }
     .table td,
     .table th {
-      background-color: #fff !important;
+      background-color: #000 !important;
     }
     .btn > .caret,
     .dropup > .btn > .caret {
@@ -358,7 +369,7 @@
     font-size: 14px;
     line-height: 1.428571429;
     color: #333333;
-    background-color: #ffffff;
+    background-color: #000;
   }
 
   input,
@@ -629,8 +640,8 @@
 
   .page-header {
     padding-bottom: 9px;
-    margin: 40px 0 20px;
-    border-bottom: 1px solid #eeeeee;
+    margin: 20px 0 20px;
+    border-bottom: 1px solid #000000;
   }
 
   ul,
@@ -1714,7 +1725,7 @@
   }
 
   .table .table {
-    background-color: #ffffff;
+    background-color: #000;
   }
 
   .table-condensed > thead > tr > th,

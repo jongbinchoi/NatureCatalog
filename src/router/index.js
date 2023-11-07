@@ -29,6 +29,16 @@ const routes = [
     path: '/forum',
     name: 'forum',
     component: () => import('../views/ForumView.vue')
+  },
+  {
+    path: '/Wujin',
+    name: 'Wujin',
+    component: () => import('../views/ExWujinView.vue')
+  },
+  {
+    path: '/Dohyon',
+    name: 'Dohyon',
+    component: () => import('../views/ExDohyonView.vue')
   }
 ]
 
