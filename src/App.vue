@@ -1,37 +1,32 @@
 <template>
-  <body>
-    <MainBar/>
-    <router-view/>
-  </body>
-
+  <div class="background-image app">
+    <div :style="backgroundStyle"></div>
+    <img :src="images[currentIndex]" @click="changeImage"/>
+  </div>
 </template>
 
 <script>
-import MainBar from '@/components/MainBar.vue'
-
 export default {
-  name: 'App',
-  components: {
-    MainBar
+  data () {
+    return {
+      currentIndex: 0,
+      images: [
+        './assets/wujin_1.png',
+        './assets/wujin_2.png'
+      ]
+    }
+  },
+  methods: {
+    changeImage () {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length
+    }
   }
 }
 </script>
 
-<style>
-router-link-active {
-  color: #ffffff;
+<style scoped>
+.background-image {
+  width: 100%;
+  height: 100%;
 }
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #ffffff;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #000000;
-}
-
 </style>
