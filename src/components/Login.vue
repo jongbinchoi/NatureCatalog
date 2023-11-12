@@ -15,7 +15,7 @@
             <button type="submit" class="button">로그인</button>
           </p>
           <p>
-            <router-link to="/register">회원가입</router-link> |
+            <router-link to="/signup">회원가입</router-link> |
             <router-link to="/find">아이디/비밀번호 찾기</router-link>
 
           </p>
@@ -59,6 +59,14 @@ p{
 hr{
   width: 100%;
   border: 1px solid #ccc;
+}
+a {
+  width: auto;
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(7, 221, 0);
 }
 #loginForm {
   width: 460px;
