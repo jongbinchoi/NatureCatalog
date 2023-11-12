@@ -31,6 +31,11 @@ const routes = [
     component: () => import('../views/ForumView.vue')
   },
   {
+    path: '/signup',
+    name: 'signup',
+    component: () => import('../views/SignUp.vue')
+  },
+  {
     path: '/Wujin',
     name: 'Wujin',
     component: () => import('../views/ExWujinView.vue')
