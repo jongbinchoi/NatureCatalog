@@ -1,47 +1,82 @@
 <template>
-  <div class="about">
-    <div class ="head">
-      <h1>Naturecatalog</h1>
-     <h2>Our nature, their expression</h2>
+  <div class = "head">NatureCatalog</div>
+  <div class="slider">
+    <div class="slider-item" v-for="(item, index) in items" :key="index" :style="{ backgroundImage: 'url(' + item + ')' }" v-show="currentSlide === index">
+    <h1>{{ item.name }}<br><small>{{ item.class }}</small></h1>
+    <p>{{ item.about }}</p>
     </div>
-  <div class = "cardcontainer">
-    <div class = "card">김재호</div>
-    <div class = "card">최종빈</div>
-    <div class = "card">강연준</div>
-    <div class = "card">나우진</div>
-    <div class = "card">이도현</div>
-  </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      items: [
+        { name: '강연준', class: 'Back-End', about: '강연준입니다.' },
+        { name: '최종빈', class: 'Back-End', about: '김민수입니다.' },
+        { name: '김재호', class: 'Front-End', about: '김영훈입니다.' },
+        { name: '나우진', class: 'Front-End', about: '김영훈입니다.' },
+        { name: '김도현', class: 'Front-End', about: '김영훈입니다.' }
+      ],
+      currentSlide: 0,
+      slideInterval: null
+    }
+  },
+  mounted () {
+    this.startSlider()
+  },
+  methods: {
+    startSlider () {
+      this.slideInterval = setInterval(() => {
+        this.nextSlide()
+      }, 3000) // 3초마다 슬라이드 전환
+    },
+    nextSlide () {
+      this.currentSlide = (this.currentSlide + 1) % this.items.length
+    }
+  }
+}
+</script>
 
 <style scoped>
 body{
   margin: 0;
   padding: 0;
 }
+small{
+  font-size: 20px;
+  color: #999999;
+}
 .head{
+  margin: 20px;
+  font-size: 50px;
+  position: relative;
+  border-bottom: 1px solid #000;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+.slider {
+ background: #0a3711;
+  /* 슬라이더 전체 스타일 */
+  width: 100%;
+  height: 40em;
+  position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
-.cardcontainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  background: darkgrey;
-  transition: transform 0.5s ease-in-out;
-}
-.card{
-  min-width: 40vh; /* 각 슬라이드의 최소 너비 */
-  height: 40vh; /* 슬라이드의 높이 */
-  background-color: lightblue;
-  border: 1px solid #000;
-  text-align: center;
-  line-height: 300px; /* 텍스트를 세로 중앙에 위치시킴 */
+.slider-item {
+  /* 각 슬라이더 아이템 스타일 */
+  background-size: cover;
+  background-position: center;
+  background: gainsboro;
+  min-width: 95%;
+  height: 90%;
+  margin: 0 1em;
+  transition: all 0.6s ease-in-out;
 }
 </style>
