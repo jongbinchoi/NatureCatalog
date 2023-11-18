@@ -1,43 +1,41 @@
 <template>
-   <div class="interactive">
-    <h1>{{ message }}</h1>
-    <button @click="changeText">텍스트 변경</button>
-  </div>
+<div class = 'slider'>
+  <div class = 'photo'><img src="../assets/photo1.jpg" height="800" width="600"></div>
+  <div class = 'main1'></div>
+</div>
 </template>
 
-<script>
-import { ref } from 'vue'
-
-export default {
-  setup () {
-    const message = ref('여기를 눌러보세요!')
-
-    function changeText () {
-      message.value = '텍스트가 변경되었습니다!'
-    }
-
-    return {
-      message,
-      changeText
-    }
-  }
-}
-</script>
-
 <style scoped>
-.interactive {
+.slider{
+  width: 100%;
+  height: 1040px;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+  background: #000;
+}
+.main1{
+  width: 360px;
+  height: 720px;
+  margin: 0 auto;
+  background: #000;
+  position: fixed;
+  bottom: -40%;
+  right: 25%;
+  color: #fff;
+  font-size: 50px;
+  font: bold;
   text-align: center;
-  margin-top: 50px;
-}
+  text-justify: center;
+  rotate: -45deg;
 
-.interactive h1 {
-  color: #333;
-  margin-bottom: 20px;
 }
-
-.interactive button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+.photo{
+  width: 100%;
+  height: 70%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 21%;
+  right: -34%;
+  background: #000;
 }
 </style>
