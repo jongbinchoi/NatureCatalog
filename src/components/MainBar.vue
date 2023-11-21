@@ -88,21 +88,18 @@ nav a.router-link-exact-active[aria-current] {
 .MenuBar-text:hover{
   color: #007BFF;
 }
-.MenuBar-login:hover{
-  background-color: #007BFF;
-}
+
 .MenuBar-login {
-  display: block;
-  height: 100%;
-  width: 10%;
-  font-size: 24px;
-  font-weight: sans-serif;
-  color: white;
-  border: none;
-  padding: 0 auto;
-  text-align: center;
+  font: bold 12px/1 sans-serif;
   text-decoration: none;
-  font-size: 16px;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20% 20%;
+  margin: 10px 10px;
 }
 nav a.router-link-exact-active {
   color: #ffffff;

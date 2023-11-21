@@ -1,5 +1,9 @@
 <template>
-  <div class = "head">NatureCatalog</div>
+  <div class = "head">
+    <h1>NatureCatalog</h1>
+    <p>"Let we introduce you"</p>
+  </div>
+
   <section class="contain">
     <MemberCard :profile="profileImage1" :name="items[0].name" :job="items[0].job" :about="items[0].about" ></MemberCard>
     <MemberCard :profile="profileImage2" :name="items[1].name" :job="items[1].job" :about="items[1].about" ></MemberCard>
@@ -37,6 +41,22 @@ export default {
 </script>
 
 <style scoped>
+.head h1{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000000d2;
+  margin: 20px;
+}
+.head p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000000d2;
+  margin: 10px;
+}
 .contain {
   display: flex;
   flex-direction: row;
