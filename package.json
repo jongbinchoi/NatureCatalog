@@ -1,51 +1,21 @@
 {
-  "name": "naturecatalog",
-  "version": "0.1.0",
-  "private": true,
+  "name": "naturecatalog-1",
+  "version": "1.0.0",
+  "description": "![header](https://capsule-render.vercel.app/api\r   ?type=waving\r   &color=auto&height=960\r   &section=header\r   &text=NatureCatalog!\r   %20render\r   &fontSize=90\r   &animation=fadeIn\r   &fontAlignY=38&desc=Decorate\r   %20GitHub\r   %20Profile\r   %20or\r   %20any\r   %20Repo\r   %20like\r   %20me!\r   &descAlignY=51\r   &descAlign=62)",
+  "main": "babel.config.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/cli-plugin-vuex": "~5.0.0"
   },
   "dependencies": {
-    "core-js": "^3.8.3",
-    "vue": "^3.2.13",
-    "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-plugin-vuex": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "@vue/eslint-config-standard": "^6.1.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-vue": "^8.0.3"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "@vue/standard"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11"
-  ]
+    "axios": "^1.6.2",
+    "router": "^1.3.8",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.1.0"
+  }
 }
