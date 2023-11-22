@@ -6,10 +6,10 @@
         <hr>
         <form @submit.prevent="fnLogin">
           <p>
-            <input class="inputUp" name="uid" placeholder="아이디" v-model="user_id">
+            <input class="inputUp" name="uid" placeholder="아이디" v-model="UserId">
           </p>
           <p>
-             <input  class="inputDown" name="password" placeholder="비밀번호" v-model="user_pw" type="password"><br>
+             <input  class="inputDown" name="password" placeholder="비밀번호" v-model="PassWd" type="password"><br>
           </p>
           <p>
             <button type="submit" class="button">로그인</button>
@@ -26,27 +26,33 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-  name: 'LoginFrom',
+  name: 'Login',
   data () {
     return {
-      user_id: '',
-      user_pw: ''
+      UserId: '',
+      PassWd: ''
     }
   },
   methods: {
     fnLogin () {
-      if (this.user_id === '') {
-        alert('ID를 입력하세요.')
-        return
-      }
-
-      if (this.user_pw === '') {
-        alert('비밀번호를 입력하세요.')
-        return
-      }
-
-      alert('로그인 되었습니다.')
+      axios.get('http://localhost:3000/login', {
+        UserId: this.UserId,
+        PassWd: this.PassWd
+      })
+        .then((res) => {
+          if (res.data.result === 'success') {
+            alert('로그인 성공')
+            this.$router.push('/')
+          } else {
+            alert('로그인 실패')
+          }
+        })
+        .catch((err) => {
+          console.log(err)
+        })
     }
   }
 }
