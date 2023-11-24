@@ -4,13 +4,10 @@
     <ul class="MenuBar-text-container">
       <li><router-link to="/about">About</router-link></li> |
       <li><router-link to="/exhibitions">Exhibition</router-link></li> |
-      <li><router-link to="/forum">forum</router-link></li> |
-      <li><router-link to="/Wujin">Wujin</router-link></li> |
-      <li><router-link to="/Dohyon">Dohyon</router-link></li>
+      <li><router-link to="/forum">forum</router-link></li>
     </ul>
     <ul class="MenuBar-util-container">
       <li><router-link to="/login">Login</router-link></li>
-      <li><router-link to="/signup">Signup</router-link></li>
     </ul>
   </nav>
 </template>
@@ -53,8 +50,8 @@ nav {
   box-sizing: border-box;
 }
 nav img {
-  position: absolute;
-  width: 10%;
+  position:fixed;
+  width: 30%;
   height: 10%;
 }
 .MenuBar-text-container {
@@ -68,15 +65,14 @@ nav img {
 }
 
 @media screen and (max-width: 768px) {
-  nav>img {
-    width: 20%;
-    height: 20%;
+  nav img {
+   display: none;
   }
   .MenuBar-text-container {
-    font-size: 1.5em;
+    font-size: 12px;
   }
   .MenuBar-util-container {
-    font-size: 1.5em;
+    font-size: 12px;
   }
   ul {
   list-style: none;
@@ -84,7 +80,7 @@ nav img {
   li {
   display: inline-block;
   margin: 0 10px;
-  font-size: 7px;
+  font-size: 18px;
 }
 
 }

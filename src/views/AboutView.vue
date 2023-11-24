@@ -66,4 +66,23 @@ export default {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 768px) {
+  .head h1{
+    font-size: 2rem;
+  }
+  .head p {
+    font-size: 1rem;
+  }
+  .contain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25x;
+    margin-bottom: 25px;
+  }
+
+}
 </style>

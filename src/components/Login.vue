@@ -140,4 +140,16 @@ nav a.router-link-exact-active[aria-current] {
   height: 100%;
   padding: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+  #loginForm {
+  width: 95%;
+  margin-top: 10px auto;
+  padding: 2px;
+  background: #fff;
+
+  border-radius: 6px;
+  border: 1px solid #000;
+}
+}
 </style>
