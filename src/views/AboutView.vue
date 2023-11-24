@@ -10,16 +10,18 @@
     <MemberCard :profile="profileImage3" :name="items[2].name" :job="items[2].job" :about="items[2].about" ></MemberCard>
     <MemberCard :profile="profileImage4" :name="items[3].name" :job="items[3].job" :about="items[3].about" ></MemberCard>
     <MemberCard :profile="profileImage5" :name="items[4].name" :job="items[4].job" :about="items[4].about" ></MemberCard>
-
   </section>
+  <Footerfrom/>
 </template>
 
 <script>
 import MemberCard from '@/components/MemberCard.vue'
+import Footerfrom from '@/components/Footer.vue';
 
 export default {
   components: {
-    MemberCard
+    MemberCard,
+    Footerfrom
   },
   data () {
     return {

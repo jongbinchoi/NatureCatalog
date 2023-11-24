@@ -9,12 +9,29 @@
       <router-link to="/login">login</router-link>
     </div>
   </figure>
+    <Footerfrom/>
   <section>
 
   </section>
 </template>
 
+<script>
+ import Footerfrom from'@/components/Footer.vue';
+  export default {
+    name: 'HomeView',
+    components: {
+      Footerfrom
+    }
+  }
+</script>
+
 <style scoped>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 figure {
   width: 100%;
   height: 80vh;

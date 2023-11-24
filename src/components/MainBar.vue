@@ -2,6 +2,7 @@
   <nav>
     <img src="../assets/Naturecatalog.png" alt="logo">
     <ul class="MenuBar-text-container">
+      <li><router-link to="/">Home</router-link></li> |
       <li><router-link to="/about">About</router-link></li> |
       <li><router-link to="/exhibitions">Exhibition</router-link></li> |
       <li><router-link to="/forum">forum</router-link></li>
@@ -50,12 +51,12 @@ nav {
   box-sizing: border-box;
 }
 nav img {
-  position:fixed;
-  width: 30%;
-  height: 10%;
+  position: absolute;
+  width: 10%;
+  object-fit: cover;
 }
 .MenuBar-text-container {
-  display: flex;
+  display: relative;
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center;
   list-style: none;

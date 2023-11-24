@@ -26,12 +26,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
-.scroll::-webkit-scrollbar {
-  display: none; /*구글, 사파리, 오페라 브라우저 스크롤바 제거*/
-}
-.scroll {
-  -ms-overflow-style: none; /* 인터넷 익스플로러 */
-  scrollbar-width: none; /* 파이어폭스 */
+body::-webkit-scrollbar {
+    width: 0 !important; /* Chrome, Safari, Opera */
+    display: none; /* Chrome, Safari, Opera */
 }
 </style>
