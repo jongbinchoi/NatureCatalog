@@ -6,7 +6,7 @@
     <div class = "inner">
       <h1>NatureCatalog</h1>
       <p>우리들이 그려보는 디지털 미술관</p>
-      <router-link to="/login">login</router-link>
+      <router-link to="/login">Login</router-link>
     </div>
   </figure>
     <Footerfrom/>
@@ -28,13 +28,14 @@
 <style scoped>
 html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 figure {
   width: 100%;
-  height: 80vh;
+  height: 69vh;
   background: #000;
   position: relative;
   overflow: hidden;
@@ -90,5 +91,23 @@ figure .inner a:hover {
   background: #fff;
   color: #000;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  figure {
+    height: 60vh;
+  }
+  figure .inner h1 {
+    font-size: 2rem;
+    margin: 10px;
+  }
+  figure .inner p {
+    font-size: 1rem;
+    margin: 10px;
+  }
+  figure .inner a {
+    font-size: 1rem;
+    margin: 10px;
+  }
 }
 </style>

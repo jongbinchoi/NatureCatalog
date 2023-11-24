@@ -64,6 +64,16 @@ nav img {
   color: #fff;
   font-size: 1.5em;
 }
+.MenuBar-util-container a {
+  font: bold 16px/1 sans-serif;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20% 20%;
+}
 
 @media screen and (max-width: 768px) {
   nav img {
@@ -81,7 +91,11 @@ nav img {
   li {
   display: inline-block;
   margin: 0 10px;
-  font-size: 18px;
+  font-size: 16px;
+}
+.MenuBar-util-container a{
+  font-size: 8px;
+  padding: 5px 5px;
 }
 
 }

@@ -53,6 +53,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
 }
 .footer-left {
     margin-left: 50px;
@@ -61,11 +62,16 @@ h2{
     font-size: 0.8rem;
     display: flex;
     text-align: left;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .footer-right > *{
     display: flex;
     flex-direction: column;
     padding-right: 100px;
+}
+@media screen and (max-width: 768px) {
+    .footer-left{
+        display: none;
+    }
 }
 </style>
