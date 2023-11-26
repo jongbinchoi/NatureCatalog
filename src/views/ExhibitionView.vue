@@ -1,7 +1,6 @@
 <template>
   <div class="container">
   <div class="row">
-
     <div class="col-lg-12">
       <h1 class="page-header">Exhibition <small>for Nature Catalogue</small></h1>
     </div>
@@ -9,9 +8,10 @@
   </div>
 
   <div class="row">
-
     <div class="col-md-8">
-      <img class="img-responsive" src="http://placehold.it/750x500">
+      <img :src="images[currentImage]" alt="Slide image">
+      <button @click="prevImage">이전</button>
+      <button @click="nextImage">다음</button>
     </div>
 
     <div class="col-md-4">
@@ -27,35 +27,42 @@
         <p class= "name-2"> Front-end: Exhibition3</p>
       </ul>
     </div>
-
+    </div>
   </div>
+<Footerfrom/>
+</template>
 
-  <div class="row">
+<script>
+  import Footerfrom from'@/components/Footer.vue';
+  export default {
+    name: 'ExhibitionView',
+    components: {
+      Footerfrom
+    },
+    data() {
+    return {
+      currentImage: 0,
+      images: [
+        'http://via.placeholder.com/750x501',
+        'http://via.placeholder.com/750x502',
+        'http://via.placeholder.com/750x500'
+        // 이미지 경로 추가
+      ]
+    };
+  },
+  methods: {
+    nextImage() {
+      this.currentImage = (this.currentImage + 1) % this.images.length;
+    },
+    prevImage() {
+      this.currentImage =
+        (this.currentImage + this.images.length - 1) % this.images.length;
+    }
+  }
+  }
+</script>
 
-    <div class="col-lg-12">
-      <h3 class="page-header">Related Projects</h3>
-    </div>
 
-    <div class="col-sm-3 col-xs-6">
-      <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
-    </div>
-
-    <div class="col-sm-3 col-xs-6">
-      <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
-    </div>
-
-    <div class="col-sm-3 col-xs-6">
-      <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
-    </div>
-
-    <div class="col-sm-3 col-xs-6">
-      <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300"></a>
-    </div>
-
-  </div>
-
-  </div>
-  </template>
 
 <style scoped>
   .name-1 {

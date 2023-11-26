@@ -6,6 +6,14 @@
             </div>
             <div class="footer-right">
                 <div class="footer-right-item">
+                    <h2>University</h2>
+                    <ul>
+                    <li>광주광역시 동구</li>
+                    <li>서석동 조선대길 146</li>
+                    <li>IT융합대학</li>
+                    </ul>
+                </div>
+                <div class="footer-right-item">
                     <h2>Team</h2>
                     <ul>
                     <li>강연준</li>
@@ -14,14 +22,13 @@
                     <li>나우진</li>
                     <li>이도현</li>
                     </ul>
-            </div>
+                </div>
                 <div class="footer-right-item">
                     <h2>Project</h2>
                     <ul>
                         <li>Spring Boot</li>
                         <li>Vue.js</li>
-                        <li>MySQL</li>
-                        <li>MyBatis</li>
+                        <li>PostgresDB</li>
                         <li>Bootstrap</li>
                     </ul>
                     </div>
