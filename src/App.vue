@@ -33,4 +33,7 @@ body::-webkit-scrollbar {
     width: 0 !important; /* Chrome, Safari, Opera */
     display: none; /* Chrome, Safari, Opera */
 }
+router-link-active {
+  color: #00ff15;
+}
 </style>
