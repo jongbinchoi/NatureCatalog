@@ -39,10 +39,10 @@
 
 <style>
 footer {
-    background-color: #fff;
-    color: #000;
     height: 200px;
     box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
 }
 ul {
     padding: 0;
@@ -79,6 +79,18 @@ h2{
 @media screen and (max-width: 768px) {
     .footer-left{
         display: none;
+    }
+    li {
+        font-size: 0.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .footer-container{
+        padding: 0 10px;
+    }
+    .footer-right-item {
+        padding-right: 50px;
     }
 }
 </style>
