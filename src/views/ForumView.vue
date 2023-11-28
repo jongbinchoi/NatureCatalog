@@ -11,20 +11,17 @@
 </template>
 
 <script>
-import axios from 'axios';
+import natureApi from "@/api/index.js";
+
 export default {
   data() {
     return {
-      NatureList: [],
-      baseUrl: 'http://localhost:8081/'
+      NatureList: []
     };
   },
-  mounted() {
-    this.fetchPosts();
-  },
   methods: {
-    fetchPosts() {
-      axios.get('${baseUrl}natureCatalog/guestbook')
+    fetchNatureList() {
+      natureApi.getNatureList()
         .then(response => {
           this.NatureList = response.data;
         })
