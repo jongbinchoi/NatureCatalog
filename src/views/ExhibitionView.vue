@@ -9,7 +9,9 @@
 
   <div class="row">
     <div class="col-md-8">
-      <img :src="images[currentImage]" alt="Slide image">
+      <router-link to="/Dohyon">
+        <img :src="images[currentImage]" alt="Slide image">
+      </router-link>
       <button @click="prevImage">이전</button>
       <button @click="nextImage">다음</button>
     </div>
