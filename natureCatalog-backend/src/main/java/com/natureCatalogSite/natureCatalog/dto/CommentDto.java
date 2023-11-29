@@ -1,6 +1,5 @@
 package com.natureCatalogSite.natureCatalog.dto;
 
-
 import com.natureCatalogSite.natureCatalog.entity.Comment;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
