@@ -10,5 +10,8 @@
         <module name="natureCatalog.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="natureCatalog" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
