@@ -49,6 +49,16 @@ const routes = [
     path: '/Dohyon',
     name: 'Dohyon',
     component: () => import('../views/ExDohyonView.vue')
+  },
+  {
+    path: '/natureCatalog/guestbook:id',
+    name: 'forumDetail',
+    component: () => import('../views/ForumViewDetail.vue')
+  },
+  {
+    path: '/comment',
+    name: 'comment',
+    component: () => import('../views/CommentView.vue')
   }
 ]
 
