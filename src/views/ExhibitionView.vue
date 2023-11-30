@@ -9,7 +9,7 @@
 
   <div class="row">
     <div class="col-md-8">
-      <router-link to="/Dohyon">
+      <router-link :to = "link[currentImage]">
         <img :src="images[currentImage]" alt="Slide image">
       </router-link>
       <button @click="prevImage">이전</button>
@@ -45,10 +45,15 @@
     return {
       currentImage: 0,
       images: [
-        'http://via.placeholder.com/750x501',
-        'http://via.placeholder.com/750x502',
+        'http://via.placeholder.com/750x500',
+        'http://via.placeholder.com/750x500',
         'http://via.placeholder.com/750x500'
         // 이미지 경로 추가
+      ],
+      link: [
+        '/Dohyon',
+        '/Wujin',
+        '/Jeaho'
       ]
     };
   },
