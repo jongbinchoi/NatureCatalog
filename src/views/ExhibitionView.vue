@@ -248,7 +248,6 @@
   input[type="reset"],
   input[type="submit"] {
     cursor: pointer;
-    -webkit-appearance: button;
   }
 
   button[disabled],
@@ -266,7 +265,6 @@
     -webkit-box-sizing: content-box;
       -moz-box-sizing: content-box;
             box-sizing: content-box;
-    -webkit-appearance: textfield;
   }
 
   input[type="search"]::-webkit-search-cancel-button,

@@ -51,6 +51,11 @@ const routes = [
     component: () => import('../views/ExDohyonView.vue')
   },
   {
+    path: '/Jeaho',
+    name: 'Jeaho',
+    component: () => import('../views/ExJeahoView.vue')
+  },
+  {
     path: '/natureCatalog/guestbook:id',
     name: 'forumDetail',
     component: () => import('../views/ForumViewDetail.vue')
