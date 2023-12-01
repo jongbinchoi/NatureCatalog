@@ -1,25 +1,23 @@
 <template>
-  
     <div>
       <h2>게시물 상세</h2>
       <div class="detailWrap">
-        <p v-if="this.results">내용: {{ results.content }}</p>
+        <p v-if="this.results">내용: {{ results.title }} / {{results.content}}</p>
       </div>
-      <CommentView :postId="postId" />
     </div>
-  
-  </template>
+    <CommentView v-if="postId" :postId="postId" />
+</template>
   
   <script>
   import CommentView from './CommentView.vue'; // CommentView 컴포넌트 가져오기
   export default {
     components: {
-    CommentView, // 컴포넌트 등록
+      CommentView, 
   },
-  data() { //변수생성
-    return{
-      results: null,
-      postId: null, // 게시글 ID
+  data() {
+    return{ 
+      results: [],
+      postId: null
     };
   }
   ,mounted() { //페이지 시작하면은 자동 함수 실행
@@ -27,24 +25,22 @@
   },
     methods: {
       loadExperiences() {
-        let url = window.location.href;
-        const arr = url.split('/')
-        url = arr[arr.length-1]
-        this.postId = id; // 게시글 ID 설정
-        
-        fetch(`/natureCatalog/guestbook/${id}`)
+        const url = window.location.href;
+      const arr = url.split('/');
+      this.postId = arr[arr.length - 1];
+        fetch(`http://localhost:8081/natureCatalog/guestbook/${this.postId}`)
           .then((response) => {
             if (response.ok) {
               return response.json();
             }
           })
           .then((data) => {
-            console.log(data)
-            this.results = data
-          })
-          .catch(err => {
-            console.log(err)
-          })
+          console.log(data)
+          this.results = data
+        })
+        .catch(err => {
+          console.log(err)
+        })
       }, 
     }
   };

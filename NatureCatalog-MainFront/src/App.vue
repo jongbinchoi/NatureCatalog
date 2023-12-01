@@ -33,4 +33,5 @@ body::-webkit-scrollbar {
     width: 0 !important; /* Chrome, Safari, Opera */
     display: none; /* Chrome, Safari, Opera */
 }
+
 </style>

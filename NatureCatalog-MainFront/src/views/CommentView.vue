@@ -2,7 +2,7 @@
     <div>
         <div v-for="comment in comments" :key="comment.id" class="card m-2">
             <div class="card-header">
-                {{ comment.nickname }}
+                {{ comment.nickname }} , {{comment.body}}
                 <button type="button"
                         class="btn btn-sm btn-outline-primary"
                         @click="editComment(comment)">수정</button>
@@ -17,7 +17,7 @@
 
         <!-- 댓글 수정 모달 -->
         <div v-if="editingComment">
-            <!-- 모달 내용 -->
+
             <label class="form-label">닉네임</label>
             <input type="text" class="form-control"
                    v-model="editingComment.nickname">
@@ -33,17 +33,23 @@
 <!-- 모달 이벤트 처리-->
 <script>
 export default {
+    props: {
+        postId: {
+            type: [String],
+            required: true
+        }
+    },
     data() {
         return {
-            comments: [], // 댓글 목록
-            editingComment: null // 현재 편집 중인 댓글
+            comments: [], // 댓 목록
+            editingComment:  { id: null, nickname: '', body: '', articleId: '' } // 현재 수정
         };
     },
     methods: {
         // 댓글 목록을 불러오는 메서드
         loadComments() {
             // API 호출 (예시 URL)
-            fetch(`/natureCatalog/guestbook/${this.editingComment.id}/comments`)
+            fetch(`http://localhost:8081/natureCatalog/guestbook/${this.postId}/comments`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to load comments');
@@ -86,9 +92,7 @@ export default {
                 console.error('Error:', error);
             });
         },
-        // 댓글 삭제 메서드
         deleteComment(id) {
-            // API 호출 (예시 URL)
             fetch(`/guestbook/comments/${id}`, {
                 method: 'DELETE'
             })
@@ -105,7 +109,11 @@ export default {
     },
     mounted() {
         // 컴포넌트가 마운트되면 댓글 목록 로드
+        //console.log(this.postId)
         this.loadComments();
-    }
+    },
+    // created(){
+    //     this.postId = this.$route.params.postId;
+    // }
 }
 </script>

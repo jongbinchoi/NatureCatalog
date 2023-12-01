@@ -11,10 +11,11 @@
     <tr v-for="(row, idx) in results" :key="idx">
           <td>*</td>
           <td>{{row.id}}</td>
-					<router-link :to="`/natureCatalog/guestbook/${row.id}`" :params="{ text: row.content }">{{ row.title }}</router-link>
+					<router-link :to="`/forum/${row.id}`" :params="{ text: row.content }">{{ row.title }}</router-link>
 				</tr>
   </tbody>
-</table>
+  </table>
+  <router-link :to="`/forum/Write`">글 작성</router-link> 
     </div>
   </template>
 

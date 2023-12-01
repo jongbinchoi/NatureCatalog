@@ -51,15 +51,32 @@ const routes = [
     component: () => import('../views/ExDohyonView.vue')
   },
   {
-    path: '/natureCatalog/guestbook:id',
+    path: '/forum/:id',
     name: 'forumDetail',
     component: () => import('../views/ForumViewDetail.vue')
   },
   {
-    path: '/comment',
+    path: '/comment/:id',
     name: 'comment',
     component: () => import('../views/CommentView.vue')
   },
+  {
+    path: '/forum/write',
+    name: 'forumWrite',
+    component: () => import('../views/newForum.vue')
+  },
+  {
+    path: '/forum/update:id',
+    name: 'forumUpdate',
+    component: () => import('../views/updateForm.vue')
+  },
+  {
+    path: '/forum/delete:id',
+    name: 'forumDelete',
+    component: () => import('../views/deleteForum.vue')
+  },
+  
+  
 ]
 
 const router = createRouter({

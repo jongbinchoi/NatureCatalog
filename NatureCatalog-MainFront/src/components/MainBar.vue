@@ -33,6 +33,11 @@ a:hover {
   color: #00ff15;
 }
 
+router-link-active {
+  color: #00ff15;
+}
+
+
 ul {
   list-style: none;
 }
@@ -75,6 +80,11 @@ nav img {
   border-radius: 20% 20%;
 }
 
+.MenuBar-util-container a:hover {
+  background: #fff;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
 @media screen and (max-width: 768px) {
   nav img {
    display: none;
