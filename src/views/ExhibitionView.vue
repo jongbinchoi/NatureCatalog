@@ -12,8 +12,10 @@
       <router-link :to = "link[currentImage]">
         <img :src="images[currentImage]" alt="Slide image">
       </router-link>
+      <div class = "container">
       <button @click="prevImage">이전</button>
       <button @click="nextImage">다음</button>
+      </div>
     </div>
 
     <div class="col-md-4">
@@ -72,6 +74,23 @@
 
 
 <style scoped>
+.container{
+  width: 100%;
+}
+.container  button{
+  background-color: #0a3711;
+  border: 2px solid #414141;
+  color: #fff;
+  display: inline-block;
+  transform: all 0.3s ease-in-out;
+  border-radius: 20% 20%;
+  margin: 10px;
+}
+.container button:hover {
+  background-color: #fff;
+  color: #0a3711;
+  transition: all 0.3s ease-in-out;
+}
   .name-1 {
     font-size: 20px;
     text-align: left;

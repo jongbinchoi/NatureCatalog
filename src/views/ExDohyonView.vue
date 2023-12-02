@@ -8,9 +8,6 @@
     <img src="../assets/P1.png" alt="Second Image" class="image2">
     <img src="../assets/C1.png" alt="Third Image" class="image3">
   </div>
-
-
-
 </template>
 
 <script>
