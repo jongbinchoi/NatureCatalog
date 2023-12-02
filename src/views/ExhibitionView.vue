@@ -49,8 +49,8 @@
       images: [
         'http://via.placeholder.com/750x500',
         'http://via.placeholder.com/750x500',
-        '../assets/ExJeaho.png'
-        // 이미지 경로 추가
+        require('@/assets/ExJeaho.png')
+        // 이미지 경로는 require를 해야한다.
       ],
       link: [
         '/Dohyon',
@@ -90,6 +90,9 @@
   background-color: #fff;
   color: #0a3711;
   transition: all 0.3s ease-in-out;
+}
+img {
+  box-shadow: 15px 15px 30px rgba(7, 216, 0, 0.1);
 }
   .name-1 {
     font-size: 20px;
