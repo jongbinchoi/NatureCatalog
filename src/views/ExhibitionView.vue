@@ -49,7 +49,7 @@
       images: [
         'http://via.placeholder.com/750x500',
         'http://via.placeholder.com/750x500',
-        'http://via.placeholder.com/750x500'
+        '../assets/ExJeaho.png'
         // 이미지 경로 추가
       ],
       link: [
